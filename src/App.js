@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import { Welcome, sum } from "./Welcome";
+import { Hello } from "./components/Hello";
+// import A from "./pages/Home";
+import Home, {day} from "./pages/Home";
+import Login from './Login';
 function App() {
+  const result = sum(20, 50)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      Hello React {result} {day}
+      <Welcome />
+      <Hello />
+      <Home />
+      <Login />
     </div>
   );
 }
