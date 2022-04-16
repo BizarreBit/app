@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+// import "./App.css";
+import Welcome from "./Welcome";
+import styles from './App.module.css'
 
 function App() {
+  // const divStyle = { color: "red", textAlign: 'center', margin: '20px 10px', padding: 10 }
+  // return <div style={divStyle}>Hello React Basic Styling</div>;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.container}>
+      <div className="main-div">Hello React Basic Styling</div>;
+      <div className={styles['main-div']}>Hello React Basic Styling</div>;
+      <div className="text-success">Hello React Basic Styling</div>;
+      <Welcome />
     </div>
   );
 }
