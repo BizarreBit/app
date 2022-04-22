@@ -1,0 +1,77 @@
+.root {
+    background-color: lightgray;
+}
+
+.bt {
+  width: 5rem;
+  line-height: 2rem;
+  margin: 0.1rem 0.5rem;
+  color: white;
+  border-radius: 5px;
+}
+
+.btRed {
+  background-color: crimson;
+  border: 1px solid red;
+}
+
+.btGreen {
+  background-color: green;
+  border: 1px solid darkgreen;
+}
+
+.bar {
+  text-align: center;
+  background-color: darkslategrey;
+  padding: 10px;
+}
+
+.panel {
+  padding: 10px;
+  display: flex;
+}
+
+.block {
+  flex: 1 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  background-color: aliceblue;
+  border: 1px solid darkgray;
+}
+
+.blockRed {
+  background-color: pink;
+  border: 1px solid deeppink;
+  color: deeppink;
+}
+
+.playerScore {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.control {
+  font-size: 1.3rem;
+}
+
+.score {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
+}
+
+.rollResult {
+  color: white;
+  background-color: gray;
+  text-align: center;
+  width: 4rem;
+  line-height: 4rem;
+  border: 1px inset;
+}

@@ -1,0 +1,12 @@
+.taskName {
+  margin-right: 0.5em;
+}
+
+.crossOut {
+  color: green;
+  text-decoration-line: line-through;
+}
+
+.button {
+  margin-left: 1rem;
+}
