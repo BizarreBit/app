@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+
+// const b = 0;
+// const c = null;
+// const d = "Hello";
+// const a = b && c && d;
 
 function App() {
+  const [show, setShow] = useState(true);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <button onClick={() => setShow((prev) => !prev)}>
+        {show ? "Hide" : "Show"}
+      </button>
+      {show && <p>Lorem ipsum</p>}
     </div>
   );
 }
 
 export default App;
+
+const todoList = [
+  { title: "Watching a movie", completed: true, id: 1 },
+  { title: "Watching a movie", completed: false, id: 2 },
+];
+
+const pendingList = todoList.filter(el => el.completed === false);
+const searchText = 'mov'
